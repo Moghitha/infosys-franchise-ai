@@ -1,2 +1,3 @@
 # infosys-franchise-ai
 Infosys Springboot Intern 7.0 Batch 4.0
+Agentic AI for Franchise Management system with performance monitoring assistance
