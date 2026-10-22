@@ -29,19 +29,22 @@ This project implements a secure authentication system using Streamlit. It provi
 ![Login](screenshots/login.png)
 
 ### Signup
-![Account creation](screenshots/createAccount.png)
+![Create Account](screenshots/createAccount.png)
 
 ### Forgot Password
-![Forgot Password](screenshots/forgot_password.png)
+![Forgot Password](screenshots/forgot%20password.png)
 
 ### Forgot Password — Security Question
-![Forgot Password Security Question](screenshots/Security_Question.png)
+![Security Question](screenshots/Security%20Question.png)
 
 ### Forgot Password — Email OTP
-![Forgot Password Email OTP](screenshots/OTP_verification.png)
+![OTP Verification](screenshots/OTP%20verification.png)
 
 ### User Dashboard
-![User Dashboard](screenshots/User_dashboard.png)
+![User Dashboard](screenshots/User%20dashboard.png)
+
+### Admin Login
+![Admin Login](screenshots/Admin%20login.png)
 
 ### Admin Dashboard
-![Admin Dashboard](screenshots/Admin_Dashboard.png)
+![Admin Dashboard](screenshots/Admin%20Dashboard.png)
