@@ -147,27 +147,25 @@ When a supported question is submitted, the system displays the corresponding SQ
 
 ## 6. Application Screenshots
 
-Screenshots should be stored in the `images/` directory.
-
 ### 6.1 Login Page
 
-![Login Page](images/Login.png)
+![Login Page](Screenshots/Login.png)
 
 ### 6.2 Main Dashboard
 
-![Main Dashboard](images/Dashboard.png)
+![Main Dashboard](Screenshots/Dashboard.png)
 
 ### 6.3 AI Copilot Interface
 
-![AI Copilot](images/Copilot.png)
+![AI Copilot](Screenshots/Copilot.png)
 
 ### 6.4 Copilot SQL Query and Results
 
-![Copilot SQL Results](images/copilot_query.png)
+![Copilot SQL Results](Screenshots/Copilot_query.png)
 
 ### 6.5 Navigation and Application Modules
 
-![Application Navigation](images/Navigation.png)
+![Application Navigation](Screenshots/Navigation.png)
 
 ## 7. Project Structure
 
