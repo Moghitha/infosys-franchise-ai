@@ -20,7 +20,7 @@ Milestone 2 focuses on extending the existing Milestone 1 application by integra
 - Support role-based access management as a separate project responsibility.
 - Maintain existing application functionality while introducing new features.
 
-## Technology Stack
+## 3. Technology Stack
 
 | Category | Technologies |
 |---|---|
@@ -41,6 +41,8 @@ Milestone 2 focuses on extending the existing Milestone 1 application by integra
 | Development Environment | Google Colab |
 | Deployment and Tunnelling | Google Colab Proxy, pyngrok |
 | Version Control | Git, GitHub |
+
+## 4. Features and Modules
 
 ### 4.1 Authentication
 
@@ -72,28 +74,11 @@ The dashboard provides a centralized interface for accessing franchise operation
 
 ### 4.3 AI Copilot
 
-## 5. Copilot – Sample Questions and Answers
+The AI Copilot accepts natural-language questions and retrieves relevant information from the franchise database using SQL queries.
 
-The AI Copilot accepts natural-language questions and retrieves relevant information from the franchise database using SQL queries. It supports questions related to outlets, workforce, inventory, sales, and other business data.
+It supports business-related questions involving outlets, workforce, inventory, sales, and other available database information.
 
-The following examples demonstrate the expected question-and-answer format:
-
-| No. | Sample Question | Expected Answer |
-|---|---|---|
-| 1 | Which is the healthiest outlet? | Displays the outlet with the highest health score, along with its location and score. |
-| 2 | Which outlet has the highest risk? | Displays the outlet with the lowest health score and its weakest performance area. |
-| 3 | Why is OUT-010 flagged? | Explains the outlet's health status, weakest agent scores, and open action tickets, if available. |
-| 4 | What is the current inventory status? | Displays the number of SKU records, items at or below reorder level, items with less than seven days of stock cover, and stock-out risk. |
-| 5 | Which items need urgent restocking? | Displays the most urgent SKUs, quantities to order, and outlets requiring stock replenishment. |
-| 6 | Show the sales trend for the last seven days. | Displays recorded sales for the last seven days, including the best and weakest sales days. |
-| 7 | How many employees work in Bengaluru? | Displays the employee count for Bengaluru and the location with the highest employee count, where available. |
-| 8 | Which city has the most employees? | Displays the city with the highest employee count and the employee count for each listed city. |
-| 9 | Which state has the most outlets? | Displays the state with the highest number of outlets. |
-| 10 | Show all outlets in Karnataka. | Displays the outlets matching the selected state, where supported by the city-to-state mapping. |
-| 11 | What is the workforce status? | Displays total staff, employees with high attrition risk, and average overtime hours. |
-| 12 | Show details of OUT-010. | Retrieves matching outlet records and related available action-ticket information. |
-
-### Copilot Response Features
+**Key features include:**
 
 - Understands different wordings of supported questions.
 - Handles common spelling variations.
@@ -103,7 +88,6 @@ The following examples demonstrate the expected question-and-answer format:
 - Provides helpful responses for greetings and unsupported questions.
 - Applies outlet-level data restrictions where required by the user's role.
 
-**Note:** The answers are generated dynamically from the database. The examples above describe the expected response content, not fixed database values. Actual results depend on the available records and the user's access permissions.
 ### 4.4 Navigation and Routing
 
 The application uses FastAPI routes to navigate between the login interface, dashboard, and backend API endpoints.
@@ -139,11 +123,28 @@ Role-based permissions for pages, database access, and actions are being handled
 
 This README does not claim that RBAC has been completed as part of the authentication integration.
 
-## 5. Copilot – Example Business Questions
+## 5. Copilot – Sample Questions and Answers
 
-The Copilot supports database-backed business questions through predefined SQL question patterns.
+The following examples demonstrate the expected question-and-answer format of the Copilot.
 
-Examples of the intended natural-language interaction include:
+| No. | Sample Question | Expected Answer |
+|---|---|---|
+| 1 | Which is the healthiest outlet? | Displays the outlet with the highest health score, along with its location and score. |
+| 2 | Which outlet has the highest risk? | Displays the outlet with the lowest health score and its weakest performance area. |
+| 3 | Why is OUT-010 flagged? | Explains the outlet's health status, weakest agent scores, and open action tickets, if available. |
+| 4 | What is the current inventory status? | Displays the number of SKU records, items at or below reorder level, items with less than seven days of stock cover, and stock-out risk. |
+| 5 | Which items need urgent restocking? | Displays the most urgent SKUs, quantities to order, and outlets requiring stock replenishment. |
+| 6 | Show the sales trend for the last seven days. | Displays recorded sales for the last seven days, including the best and weakest sales days. |
+| 7 | How many employees work in Bengaluru? | Displays the employee count for Bengaluru and the location with the highest employee count, where available. |
+| 8 | Which city has the most employees? | Displays the city with the highest employee count and the employee count for each listed city. |
+| 9 | Which state has the most outlets? | Displays the state with the highest number of outlets. |
+| 10 | Show all outlets in Karnataka. | Displays the outlets matching the selected state, where supported by the city-to-state mapping. |
+| 11 | What is the workforce status? | Displays total staff, employees with high attrition risk, and average overtime hours. |
+| 12 | Show details of OUT-010. | Retrieves matching outlet records and related available action-ticket information. |
+
+### 5.1 Additional Example Business Questions
+
+Other examples of natural-language questions include:
 
 - Show me the overall franchise performance.
 - What is the current workforce status?
@@ -152,9 +153,19 @@ Examples of the intended natural-language interaction include:
 - Retrieve the records matching my question.
 - Show the database results for this query.
 
-**Important:** The exact questions supported depend on the SQL patterns implemented in `analyst.py`. These examples are illustrative; use the application's tested question patterns when demonstrating the Copilot.
+### 5.2 Copilot Response Details
 
-When a supported question is submitted, the system displays the corresponding SQL query and database results. Unsupported questions receive a helpful response with suggestions for supported queries.
+When a supported question is submitted:
+
+1. The Copilot identifies the question pattern.
+2. It retrieves the relevant information from the database.
+3. It executes the corresponding SQL query.
+4. It displays the generated SQL query.
+5. It presents the query results and row count, where applicable.
+
+Unsupported questions receive a helpful response with suggestions for supported queries.
+
+**Note:** Answers are generated dynamically from the database. The examples above describe expected response content, not fixed database values. Actual results depend on the available records, implemented SQL patterns, and user permissions. The exact questions supported depend on the implementation in `analyst.py` and `qa.py`.
 
 ## 6. Application Screenshots
 
@@ -188,12 +199,12 @@ Milestone2/
 ├── README.md
 ├── FranchiseOps_Copilot_Login_Integrated.ipynb
 │
-└── images/
-    ├── login-page.png
-    ├── dashboard.png
-    ├── copilot.png
-    ├── copilot-results.png
-    └── navigation.png
+└── Screenshots/
+    ├── Login.png
+    ├── Dashboard.png
+    ├── Copilot.png
+    ├── Copilot_query.png
+    └── Navigation.png
 ```
 
 The application source code generated and executed in the notebook is organized as follows:
@@ -293,7 +304,7 @@ The authentication module includes login, registration, and password recovery en
 |---|---|
 | Kaushik B Narayana | Role-Based Access Control (RBAC) Integration |
 | Moghitha B | Login and Authentication Integration, AI Copilot Enhancement |
-| Pullaiahgari Lahari | Streamlit to FastAPI Integration |  
+| Pullaiahgari Lahari | Streamlit to FastAPI Integration |
 
 ## 12. Conclusion
 
