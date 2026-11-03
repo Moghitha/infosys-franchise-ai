@@ -282,7 +282,7 @@ The authentication module includes login, registration, and password recovery en
 - Application screenshots.
 - Preparation for separate RBAC integration.
 
-## Team Members and Contributions
+## 11. Team Members and Contributions
 
 | Team Member | Contribution |
 |---|---|
@@ -290,7 +290,7 @@ The authentication module includes login, registration, and password recovery en
 | Moghitha B | Login and Authentication Integration, AI Copilot Enhancement |
 | Pullaiahgari Lahari | Streamlit to FastAPI Integration |  
 
-## 11. Conclusion
+## 12. Conclusion
 
 Milestone 2 extends the FranchiseOps AI Copilot by integrating authentication into the existing franchise management application while retaining its dashboard and database-driven Copilot capabilities.
 
