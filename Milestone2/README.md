@@ -72,33 +72,38 @@ The dashboard provides a centralized interface for accessing franchise operation
 
 ### 4.3 AI Copilot
 
-The AI Copilot understands natural-language questions and retrieves answers from the franchise database using SQL queries.
+## 5. Copilot – Sample Questions and Answers
 
-It supports business-related questions concerning outlets, workforce, inventory, marketing, customer feedback, and audits. It also handles greetings and provides suggestions for unsupported questions.
+The AI Copilot accepts natural-language questions and retrieves relevant information from the franchise database using SQL queries. It supports questions related to outlets, workforce, inventory, sales, and other business data.
 
-**The following are 18 sample questions for demonstrating the Copilot:**
+The following examples demonstrate the expected question-and-answer format:
 
-1. Which outlet has the lowest customer satisfaction?
-2. How many staff members work at OUT-010?
-3. Which items are below the reorder level?
-4. Which campaign has the best ROI?
-5. Show negative customer reviews this week.
-6. Which audits require corrective action?
-7. List the top 5 outlets by revenue.
-8. Which outlets have the highest staff attrition?
-9. Which items have the highest stock-out risk?
-10. Which campaign has the most conversions?
-11. Which outlet has the most negative customer feedback?
-12. Show all pending compliance issues.
-13. Which outlets are the most profitable?
-14. Which employees have a high attrition risk?
-15. Which outlet has the lowest stock cover?
-16. What is the total marketing budget by channel?
-17. What is the average customer rating by outlet?
-18. Which outlets have the lowest audit scores?
+| No. | Sample Question | Expected Answer |
+|---|---|---|
+| 1 | Which is the healthiest outlet? | Displays the outlet with the highest health score, along with its location and score. |
+| 2 | Which outlet has the highest risk? | Displays the outlet with the lowest health score and its weakest performance area. |
+| 3 | Why is OUT-010 flagged? | Explains the outlet's health status, weakest agent scores, and open action tickets, if available. |
+| 4 | What is the current inventory status? | Displays the number of SKU records, items at or below reorder level, items with less than seven days of stock cover, and stock-out risk. |
+| 5 | Which items need urgent restocking? | Displays the most urgent SKUs, quantities to order, and outlets requiring stock replenishment. |
+| 6 | Show the sales trend for the last seven days. | Displays recorded sales for the last seven days, including the best and weakest sales days. |
+| 7 | How many employees work in Bengaluru? | Displays the employee count for Bengaluru and the location with the highest employee count, where available. |
+| 8 | Which city has the most employees? | Displays the city with the highest employee count and the employee count for each listed city. |
+| 9 | Which state has the most outlets? | Displays the state with the highest number of outlets. |
+| 10 | Show all outlets in Karnataka. | Displays the outlets matching the selected state, where supported by the city-to-state mapping. |
+| 11 | What is the workforce status? | Displays total staff, employees with high attrition risk, and average overtime hours. |
+| 12 | Show details of OUT-010. | Retrieves matching outlet records and related available action-ticket information. |
 
-**Note:** These are sample demonstration questions. The exact questions supported depend on the SQL patterns implemented in `analyst.py`. Use the application's tested question patterns when demonstrating the Copilot.
+### Copilot Response Features
 
+- Understands different wordings of supported questions.
+- Handles common spelling variations.
+- Retrieves answers from the SQLite database.
+- Displays the SQL query used to generate the answer.
+- Displays query results and row counts where applicable.
+- Provides helpful responses for greetings and unsupported questions.
+- Applies outlet-level data restrictions where required by the user's role.
+
+**Note:** The answers are generated dynamically from the database. The examples above describe the expected response content, not fixed database values. Actual results depend on the available records and the user's access permissions.
 ### 4.4 Navigation and Routing
 
 The application uses FastAPI routes to navigate between the login interface, dashboard, and backend API endpoints.
