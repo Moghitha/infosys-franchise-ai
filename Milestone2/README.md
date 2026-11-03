@@ -20,21 +20,27 @@ Milestone 2 focuses on extending the existing Milestone 1 application by integra
 - Support role-based access management as a separate project responsibility.
 - Maintain existing application functionality while introducing new features.
 
-## 3. Technology Stack
+## Technology Stack
 
-| Component | Technology |
+| Category | Technologies |
 |---|---|
-| Backend | Python, FastAPI |
+| Programming Language | Python |
+| Backend Framework | FastAPI |
 | Frontend | HTML, CSS, JavaScript |
 | Database | SQLite |
 | Authentication | JWT, bcrypt |
-| AI Copilot | Python-based question processing and SQL query execution |
-| Data Processing | Pandas |
-| Server | Uvicorn |
-| Development Environment | Google Colab, VS Code |
-| Version Control | Git and GitHub |
-
-## 4. Application Features
+| Data Processing | Pandas, NumPy |
+| Machine Learning | Scikit-learn, SciPy |
+| Sentiment Analysis | VADER |
+| Data Visualization | Matplotlib, Apache ECharts |
+| Maps | Leaflet, TopoJSON |
+| PDF Processing | pdfplumber |
+| HTTP Requests | Requests |
+| Email Service | SMTP |
+| Application Server | Uvicorn |
+| Development Environment | Google Colab |
+| Deployment and Tunnelling | Google Colab Proxy, pyngrok |
+| Version Control | Git, GitHub |
 
 ### 4.1 Authentication
 
@@ -275,6 +281,14 @@ The authentication module includes login, registration, and password recovery en
 - Project documentation.
 - Application screenshots.
 - Preparation for separate RBAC integration.
+
+## Team Members and Contributions
+
+| Team Member | Contribution |
+|---|---|
+| Kaushik B Narayana | Role-Based Access Control (RBAC) Integration |
+| Moghitha B | Login and Authentication Integration, AI Copilot Enhancement |
+| Pullaiahgari Lahari | Streamlit to FastAPI Integration |  
 
 ## 11. Conclusion
 
