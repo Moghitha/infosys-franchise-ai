@@ -256,10 +256,10 @@ The FranchiseOps AI project was developed collaboratively by a team of five memb
 
 | Sl. No. | Team Member Name | Contribution / Responsibilities |
 |---|---|---|
-| 1 | [Member 1 Name] | [Describe contribution and modules handled] |
-| 2 | [Member 2 Name] | [Describe contribution and modules handled] |
-| 3 | [Member 3 Name] | [Describe contribution and modules handled] |
-| 4 | [Member 4 Name] | [Describe contribution and modules handled] |
-| 5 | [Member 5 Name] | [Describe contribution and modules handled] |
+| 1 | [Aditya Kumar] | [Describe contribution and modules handled] |
+| 2 | [Kaushik B] | [Describe contribution and modules handled] |
+| 3 | [Moghitha B] | [Describe contribution and modules handled] |
+| 4 | [Mrunali Karmore] | [Describe contribution and modules handled] |
+| 5 | [Yedururi Venkata Sai Sujitha] | [Describe contribution and modules handled] |
 
 All team members contributed to the development, integration, testing and documentation of the FranchiseOps AI platform.
