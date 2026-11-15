@@ -203,12 +203,35 @@ The following tests should be performed:
 
 The following screenshots are included as implementation evidence:
 
-1. RAG Builder source and chunk count.
-2. Admin → Teach Copilot counter.
-3. Copilot response with source citations.
-4. Agent simulator before and after improvements.
-5. Admin → Copilot insights.
-6. Admin → System check showing RAG integration.
+1. **RAG Builder**
+   - `screenshots/rag_builder/source_collection.png`
+   - `screenshots/rag_builder/chunk_generation.png`
+
+2. **Admin → Teach Copilot**
+   - `screenshots/copilot/taught_questions_50_50.png`
+
+3. **Copilot Response with Source Citations**
+   - `screenshots/copilot/copilot_rag_response.png`
+
+4. **Agent Simulator Before and After Improvements**
+   - `screenshots/simulators/inventory_before_after.png`
+   - `screenshots/simulators/workforce_before_after.png`
+   - `screenshots/simulators/pnl_before_after.png`
+   - `screenshots/simulators/marketing_before_after.png`
+   - `screenshots/simulators/sentiment_before_after.png`
+   - `screenshots/simulators/audit_before_after.png`
+
+5. **Admin → Copilot Insights**
+   - `screenshots/copilot/copilot_insights.png`
+
+6. **Admin → System Check and RAG Integration**
+   - `screenshots/system/system_check.png`
+   - `screenshots/system/google_drive_rag_status.png`
+
+7. **User Authentication and Role-Based Access Control**
+   - `screenshots/authentication/login.png`
+   - `screenshots/authentication/role_access.png`
+   - `screenshots/authentication/unauthorized_403.png`
 
 ## 10. Security and Repository Guidelines
 
