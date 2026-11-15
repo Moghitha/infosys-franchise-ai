@@ -256,10 +256,10 @@ The FranchiseOps AI project was developed collaboratively by a team of five memb
 
 | Sl. No. | Team Member Name | Contribution / Responsibilities |
 |---|---|---|
-| 1 | [Aditya Kumar] | [Describe contribution and modules handled] |
-| 2 | [Kaushik B] | [Describe contribution and modules handled] |
-| 3 | [Moghitha B] | [Describe contribution and modules handled] |
-| 4 | [Mrunali Karmore] | [Describe contribution and modules handled] |
-| 5 | [Yedururi Venkata Sai Sujitha] | [Describe contribution and modules handled] |
+| 1 | [Aditya Kumar] | [RBAC integration and login functionality] |
+| 2 | [Kaushik B] | [Simulator modifications] |
+| 3 | [Moghitha B] | [AI Copilot enhancement and addition of 67 questions] |
+| 4 | [Mrunali Karmore] | [RAG (Retrieval-Augmented Generation) implementation] |
+| 5 | [Yedururi Venkata Sai Sujitha] | [PPT Presentation] |
 
 All team members contributed to the development, integration, testing and documentation of the FranchiseOps AI platform.
